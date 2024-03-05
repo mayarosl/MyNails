@@ -10,16 +10,16 @@ export interface IRoute {
 
 export const publicRoutes: IRoute[] = [
   {
-    path: '/login', 
+    path: "/login",
     element: Login,
-    exact: true, 
-  }
-]
+    exact: true,
+  },
+];
 
 export const privateRoutes: IRoute[] = [
   {
-    path: '/', 
+    path: "/",
     element: Main,
-    exact: true, 
-  }
-]
+    exact: true,
+  },
+];
