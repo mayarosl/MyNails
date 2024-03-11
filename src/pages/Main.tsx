@@ -1,7 +1,13 @@
 import { FC } from "react";
+import {ListItem} from "../components/ListItems/ListItems"
 
 const Main: FC = () => {
-  return <div>MAIN PAGE</div>;
+  return (
+    <div>
+      <div>MAIN PAGE</div>
+      <ListItem></ListItem>
+    </div>
+  )
 };
 
 export default Main;
