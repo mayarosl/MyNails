@@ -1,3 +1,4 @@
+import { List } from "antd";
 import { useEffect, useState } from "react";
 
 interface NailPolish {
@@ -10,6 +11,7 @@ interface ProductColor {
   hex_value: string;
   colour_name?: string; 
 }
+
 
 export function ListItem() {
   const [nailList, setNailList] = useState<NailPolish[]>([]); 
@@ -24,13 +26,29 @@ export function ListItem() {
     list();
   }, []);
 
+console.log(nailList);
+
   return (
     <div>
+      <List
+        dataSource={nailList}
+        renderItem={(item: NailPolish) => (
+          <List.Item
+          extra={<img 
+          width={272}
+          alt="logo"
+          style={{backgroundColor: item.product_colors,  width: "100px",  height: "100px"  }}
+        />}>
+            {item.brand}
+            
+          </List.Item>
+        )}
+      />
       {nailList.map((card) => (
         <div key={card.id}> 
           {card.product_colors.map((nail, index) => (
             <div key={index}>
-              {nail.hex_value}
+              {nail.colour_name}
               <div style={{ width: "100px", height: "100px", background: nail.hex_value }}>
               </div>
             </div>
