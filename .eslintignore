@@ -1,0 +1,4 @@
+// .eslintignore
+
+.prettierrc
+/src/vite-env.d.ts

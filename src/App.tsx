@@ -1,12 +1,8 @@
-import "./App.css";
-import AppRouter from "./components/AppRouter";
+import AppRouter from './components/AppRouter';
+import './App.css';
 
-function App() {
-  return (
-    <>
-      <AppRouter />
-    </>
-  );
+function App(): JSX.Element {
+    return <AppRouter />;
 }
 
 export default App;
