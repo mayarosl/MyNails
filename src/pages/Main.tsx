@@ -1,12 +1,11 @@
 import { type FC } from 'react';
+import ColorCard from '../components/ColorCard';
 
 const Main: FC = () => {
     return (
         <div>
             <h3>Тут поиск</h3>
-            <div>тут карточка маников</div>
-            <div>тут карточка маников</div>
-            <div>тут карточка маников</div>
+            <ColorCard />
         </div>
     );
 };
