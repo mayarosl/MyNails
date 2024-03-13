@@ -41,7 +41,9 @@ const ColorCard: FC = () => {
 
                     <p
                         style={{ cursor: 'pointer' }}
-                        onClick={() => console.log('to favs')}
+                        onClick={() => {
+                            console.log('to favs');
+                        }}
                     >
                         добавить в избранное
                     </p>
